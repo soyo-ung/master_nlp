@@ -1,0 +1,1 @@
+﻿MOTIF=\엄마|mamma|maman\b

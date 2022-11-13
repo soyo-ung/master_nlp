@@ -1,0 +1,3 @@
+./URLS
+./TABLEAUX/resultat.html
+maman|mamma|엄마

@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<link rel="SHORTCUT ICON" href="http://designspoon.com/favicon.ico">
+<link rel="shortcut icon" href="http://designspoon.com/favicon.ico" />
+<link href='../css/style.css' rel='stylesheet' type='text/css'>
+<title>magazine</title>
+<script>
+// 북마크 추가
+function bookmark(title,url){
+	if(document.all){ // 익스
+	   window.external.AddFavorite(url, title);
+	}else if(window.sidebar){ // 파폭
+	   window.sidebar.addPanel(title, url, "");
+	}else if(window.opera && window.print){ // 오페라
+		  var obj = document.createElement('a');
+		  obj.setAttribute('href',url);
+		  obj.setAttribute('title',title);
+		  obj.setAttribute('rel','sidebar');
+		  obj.click();
+	}
+}
+</script>
+<script language="javascript">
+// 자바스크립트에서 사용하는 전역변수 선언
+var g4_path      = "..";
+var g4_bbs       = "bbs";
+var g4_bbs_img   = "img";
+var g4_url       = "http://designspoon.com";
+var g4_is_member = "";
+var g4_is_admin  = "";
+var g4_bo_table  = "";
+var g4_sca       = "";
+var g4_charset   = "euc-kr";
+var g4_cookie_domain = ".designspoon.com";
+var g4_is_gecko  = navigator.userAgent.toLowerCase().indexOf("gecko") != -1;
+var g4_is_ie     = navigator.userAgent.toLowerCase().indexOf("msie") != -1;
+</script>
+<Script Language="JAVAScript" src="../script/Embed.js"></Script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/ajax2.js"></script>
+<script type="text/javascript" src="../js/flashObj.js"></script>
+<script type="text/javascript" src="../js/fade.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js" jquery15108076343701587521="87"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34885200-1']);
+  _gaq.push(['_setDomainName', 'designspoon.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="/js/bxslider/jquery.bxslider.css" rel="stylesheet" />			<!--탑 우측배너 Slide  Css-->
+<script src="/js/bxslider/jquery.bxslider02.js"></script>					<!--탑 우측배너 Slide-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+$(document).ready(function() {
+	$('.bxslider02').bxSlider02();
+});
+
+//-->
+</SCRIPT>
+<style type="text/css">
+.bxslider02 li {left:0 !important;}
+.bxslider02 * {margin:0;padding:0;}
+.bxslider02 {margin:0;padding:0;}
+.bxslider li {left:0 !important;}
+.bxslider * {margin:0;padding:0;}
+.bxslider {margin:0;padding:0;}
+
+</style>
+</head>
+<body topmargin="0" leftmargin="0" >
+<a name="g4_head"></a><center>
+<table cellpadding="0" cellspacing="0" width="980">
+<!-- top -->
+	<tr>
+    	<td class="top_bg" height="68px;">
+        	<table cellpadding="0" cellspacing="0" width="980" height="68" style="background-image:url(http://designspoon.com/images/top/menu_bg.jpg); background-repeat:repeat-x; height:68px;">
+	<tr>
+    	<td width="20"></td>
+        <td align="right"><a href="../main/main.php"><img src="../images/top/logo.png" border="0" /></a></td>
+    	<td width="80"></td>
+        <td><a href="../tutorials/main.php" onfocus="this.blur();"><img src="../images/top/menu_1.png" border="0" align="middle" /></a></td>
+    	<td><a href="../web/web_list.php" onfocus="this.blur();"><img src="../images/top/menu_2.png" border="0" /></a></td>
+    	<td><a href="../source/source_list.php" onfocus="this.blur();"><img src="../images/top/menu_3.png" border="0" /></a></td>
+    	<td><a href="../gallery/gallery_list.php" onfocus="this.blur();"><img src="../images/top/menu_4.png" border="0" /></a></td>
+   	  <td><a href="../shop/goods_list.php" onfocus="this.blur();"><img src="../images/top/menu_5.png" border="0" /></a></td>
+        <td><a href="../magazine/magazine.php" onfocus="this.blur();"><img src="../images/top/menu_6.png" border="0" /></a></td>
+    	<td><a href="../story/list.php" onfocus="this.blur();"><img src="../images/top/menu_7.png" border="0" /></a></td>
+    	<td><a href="../bbs/board.php?bo_table=event"><img src="../images/top/menu_8.png" border="0" /></a></td>
+    	<td width="80"></td>
+		<!-- <td><a href="../main/main.php" onfocus="this.blur();"><img src="../images/top/top_home.png" border="0" /></a></td> -->
+    	        <td><a href="../bbs/login.php" onfocus="this.blur();"><img src="../images/top/top_login.png" border="0" /></a></td>
+        <td><a href="../bbs/register.php" onfocus="this.blur();"><img src="../images/top/top_join.png" border="0" /></a></td>
+              <td width="10"></td>
+
+    </tr>
+</table>
+        </td>
+    </tr>
+</table>
+<script src="../js/jquery.paging.js"></script>
+<!--본문-->
+<table cellpadding="0" cellspacing="0" width="980">
+  <!-- 서브메뉴 -->
+  
+  <tr>
+    <td height="42" align="left"><style type="text/css">
+.sub_menuDiv {position:absolute; display:none; background-color:#FFF;}
+</style>
+<table cellpadding="0" cellspacing="0" width="980">
+  <tr>
+    <td width="77"><img src="../images/sub_1/btn_maga.png" width="77" height="26" /></td>
+    <td class="pop_txt"><table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td><a href="../magazine/magazine.php">전체</a></td>
+            <td align='center'>&nbsp;|&nbsp;</td>
+          <!-- 한칸 -->
+					          
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td><a href="../magazine/magazine.php?bcate=C134613157765" >월간[WEB]</a></td>
+              </tr>
+              <tr>
+                <td><div id="sub_menu1" class="sub_menuDiv" onmouseover="this.style.display='block';"  onmouseout="this.style.display='none';">
+                   
+                  </div></td>
+              </tr>
+            </table></td>
+<td align='center'>&nbsp;|&nbsp;</td>					          
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td><a href="../magazine/magazine.php?bcate=C134449743898" >월간[IM]</a></td>
+              </tr>
+              <tr>
+                <td><div id="sub_menu2" class="sub_menuDiv" onmouseover="this.style.display='block';"  onmouseout="this.style.display='none';">
+                   
+                  </div></td>
+              </tr>
+            </table></td>
+<td align='center'>&nbsp;|&nbsp;</td>					          
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td><a href="../magazine/magazine.php?bcate=C134613385975" >디자이너's 포스팅</a></td>
+              </tr>
+              <tr>
+                <td><div id="sub_menu3" class="sub_menuDiv" onmouseover="this.style.display='block';"  onmouseout="this.style.display='none';">
+                   
+                  </div></td>
+              </tr>
+            </table></td>
+<td align='center'>&nbsp;|&nbsp;</td>					          
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td><a href="../magazine/magazine.php?bcate=C135468955130" >얼리어답터</a></td>
+              </tr>
+              <tr>
+                <td><div id="sub_menu4" class="sub_menuDiv" onmouseover="this.style.display='block';"  onmouseout="this.style.display='none';">
+                   
+                  </div></td>
+              </tr>
+            </table></td>
+<td align='center'>&nbsp;|&nbsp;</td>					          
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td><a href="../magazine/magazine.php?bcate=C134616437212" >기타</a></td>
+              </tr>
+              <tr>
+                <td><div id="sub_menu5" class="sub_menuDiv" onmouseover="this.style.display='block';"  onmouseout="this.style.display='none';">
+                   
+                  </div></td>
+              </tr>
+            </table></td>
+            
+            <!-- 한칸 -->
+          
+        </tr>
+      </table></td>
+    <td width="700"></td>
+    <td class="pop_txt"><a href="http://www.loud.kr" target="_blank" ><img src="../images/top/btn_t_02.jpg" /></a></td>  
+    <td class="pop_txt"><a href="http://kr.fotolia.com/designspoon" target="_blank"><img src="../images/top/btn_t_01.jpg" /></a></td>
+    <td class="pop_txt"><a href="http://agency.designspoon.com/" target="_blank"><img src="../images/top/btn_t_03.jpg" /></a></td>               
+      
+      
+</table>
+</td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#e1e1e1"></td>
+  </tr>
+  <tr>
+    <td height="14"></td>
+  </tr>
+  <!-- 타이틀  -->
+  <tr>
+    <td align="left"><table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><img src="../images/magazine/title_online.jpg" /></td>
+          </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="11"></td>
+  </tr>
+  
+  <!--내용 -->
+  <tr>
+    <td align="center" valign="top"><table cellpadding="0" cellspacing="0" width="960" bgcolor="#FFFFFF">
+        <tr>
+          <td height="1" bgcolor="#c6c6c6"></td>
+        </tr>
+        <tr>
+          <td height="1" bgcolor="#FFFFFF"></td>
+        </tr>
+        <tr >
+          <td class="view_title" align="center"><table width="900" cellpadding="0" cellspacing="0">
+              <tr> 
+                <!-- 제목 -->
+                <td><table width="787" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle" style="padding-top:5px"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td align="left" class="view_text">월간[IM]                             <!-- /
+                               -->
+                              -
+                              새해 웰빙 프로젝트 삶의 하모니를 꿈꾸는 사람들</td>
+                          </tr>
+                          <tr>
+                            <td class="view_name" align="left">월간 아이엠애드[IM]                              <span class="view_date">&nbsp;|&nbsp;</span><span class="view_date">
+                              2010.08.03 17:21:21                              </span></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td><table cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" valign="middle" class="view_search">댓글
+                        0                        &nbsp;|&nbsp;조회
+                        3,685</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" style="padding:20px;"><br />
+            <span id="writeContents">
+            <SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">
+<DIV align=left><BR><FONT color=#7f7f7f>새해도 벌써 한 달이 훌쩍 지나갔습니다. 계획했던 포부는 크건만 아무런 발전없이 시간만 좀먹는 건 아닌지. 달라진 것 없는 일상을 확인할 때면 스스로에 대한 실망감에 몸부림치는 우리들의 모습입니다. 이럴 때일수록 소소한 것에서 행복을 찾는 지혜로움이 필요하지 않을까요? 여기 작은 취미와 습관으로 건강과 행복을 찾는 블로거들이 있습니다~~</FONT></SPAN></SPAN><FONT color=#7f7f7f> </FONT><BR></DIV>
+<DIV align=left><BR></DIV>
+<DIV align=left><A href="http://blog.naver.com/and002" target=_blank><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">http://blog.naver.com/and002</SPAN></SPAN></A><BR><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">‘앤드’의 차나 한 잔&nbsp; 술은 흥에 취하지만, 차는 향에 취한다 했다. 차는 예로부터 정신을 맑게 하고 기운을 돋운다 해서 선비의 사랑을 한 몸에 받았던 것. 차 마시는 행위를 ‘다예’라 칭할 정도로 차에 부여하는 의미는 특별했다. 말린 차 잎을 뜨거운 물에 우려내 찻잔에 따르기까지 올곧은 마음과 정성은 필수였다. 앤드의 블로그에는 이러한 선비의 예가 물씬 배어난다. 찻잎을 만드는 과정부터 차를 빛나게 해주는 다기와 다식까지, 섬세하고 절제된 앤드의 언어가 우리를 차의 세계로 안내한다. 그윽한 향취에 넋을 잃지 않도록 주의하자.</SPAN></SPAN> </FONT></DIV>
+<DIV align=left>&nbsp;</DIV>
+<DIV align=left>&nbsp;</DIV><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><FONT color=#5c7fb0>
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left><IMG class=chimg_photo height=489 alt="" src="http://spoon.designspoon.kr/data/old_magazine/201008/201008_worldim_wjuMs4YMav_.jpg" width=730 align=top border=0></DIV></FONT></SPAN></SPAN></SPAN></SPAN>
+<DIV style="TEXT-ALIGN: center" align=left></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><BR></DIV>
+<DIV style="TEXT-ALIGN: left" align=left><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</SPAN></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><A href="http://blog.naver.com/mugangigan" target=_blank><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">http://blog.naver.com/mugangigan</SPAN></SPAN></A><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">&nbsp;<BR></SPAN></SPAN><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">‘얌얌공주’의 맛있는 음식처방&nbsp; 화학조미료에 길들여진 현대인은 섬세한 미각이 가져다 주는 즐거움을 잘 느끼지 못한다. 먹는 거 하나에도 완전한 행복을 얻을 수 없는 상황이다. ‘얌얌공주’의 블로그는 사찰음식을 통해 사람이 원래 갖고 있던 미각을 복원하고자 한다. 그의 말처럼 사찰음식은 천연 식재료와 조미료를 이용, 식재료 고유의 맛을 살리는 조리법이기에 자연의 순순한 맛을 즐길 수 있다. 물론 처음에는 낯선 맛과 향에 주춤할지 모르나 얌얌공주의 레시피를 따라가다 보면 어느새 입 안 가득 퍼지는 향긋한 자연을 머금게 된다.</SPAN></SPAN>&nbsp;<BR></FONT><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"> <BR></DIV>
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left>
+<TABLE style="MARGIN: 0px auto" cellSpacing=5 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>
+<DIV align=left><A href="http://cfile29.uf.tistory.com/original/19113B1D4B7FCFF13B0898" target=_blank rel=lightbox><IMG style="CURSOR: pointer" height=443 alt="가지 나물" src="http://cfile29.uf.tistory.com/image/19113B1D4B7FCFF13B0898" width=295 border=0></A></DIV></TD>
+<TD><A href="http://cfile22.uf.tistory.com/original/18657F1D4B7FD00E799943" target=_blank rel=lightbox></A></TD></TR></TBODY></TABLE></DIV>
+<DIV style="TEXT-ALIGN: center" align=left>&nbsp;</DIV>
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left></SPAN></SPAN><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">구운가지나물, </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">이깔나무버섯볶음</SPAN></SPAN></SPAN>&nbsp;<BR></FONT><SPAN style="FONT-FAMILY: helvetica">&nbsp;</SPAN></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><A href="http://blog.naver.com/manwha21" target=_blank><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">http://blog.naver.com/manwha21</SPAN></SPAN></A><BR><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">‘올빼미’의 올빼미화원&nbsp; 도시적인 삶은 소비가 전부라 해도 과언이 아니다. 대형마트에 가면 언제든 신선한 야채들이 종류별로 배열돼 있고 우리는 쉽게 그것을 소비한다. 가령 토마토가 어떻게 내 손까지 오게 됐는지는 별로 중요하지 않다. ‘올빼미’의 블로그는 이러한 단절된 삶의 연관고리를 잇는 데서 출발한다. 비록 원시적인 농업방법이지만 하루하루 변해가는 식물의 모습을 지켜보며, 각박했던 도시의 삶이 점차 자연과 호흡하는 삶으로 변해감을 느낄 수 있다. 올빼미 화원은 이러한 체험을 몸소 경험할 수 있는 도시농부의 공간이다.</SPAN></SPAN> <BR></FONT></DIV>
+<DIV style="TEXT-ALIGN: left" align=left><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"></SPAN><FONT color=#7f7f7f>&nbsp;</FONT></SPAN><FONT color=#7f7f7f>&nbsp;</FONT></DIV><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left>
+<TABLE style="MARGIN: 0px auto" cellSpacing=5 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><A href="http://cfile24.uf.tistory.com/original/126DBF1D4B7FCFDE49872C" target=_blank rel=lightbox></A></TD>
+<TD><A href="http://cfile29.uf.tistory.com/original/1453DF1D4B7FCFE6C650EA" target=_blank rel=lightbox><IMG style="CURSOR: pointer" height=393 alt=방울토마토 src="http://cfile29.uf.tistory.com/image/1453DF1D4B7FCFE6C650EA" width=295 border=0></A></TD></TR></TBODY></TABLE></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><SPAN></DIV></SPAN></SPAN></SPAN>
+<DIV style="TEXT-ALIGN: center" align=left></DIV>
+<DIV style="TEXT-ALIGN: center" align=left>&nbsp;</DIV>
+<DIV style="TEXT-ALIGN: center" align=left><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">5월의 주말농장 쌈 채소 이랑,</SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">7월의 방울토마토</SPAN></SPAN></SPAN></FONT></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><BR><BR></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><A href="http://blog.daum.net/parkah99" target=_blank><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">http://blog.daum.net/parkah99</SPAN></SPAN></A><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">&nbsp;<BR></SPAN></SPAN><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">‘주리니’의 특별한 생활 속 체험&nbsp; 파워 주부들의 활약이 눈부신 요즘. 생활 속 필수품을 스스로 만들고자 하는 주부들의 의지는 강력하다. 아무래도 팍팍한 살림살이가 한 몫 했을 테지만 온라인를 통해 각종 노하우가 공유되면서 만드는 재미가 느는 것도 사실이다. ‘주리니’의 블로그는 이러한 주부들이 즐겨 찾는 네트워크 허브다. 각종 천연화장품과 비누, 샴푸 등 제품의 제작 과정이 꼼꼼히 소개돼 있어 이러한 비기들을 너무 쉽게 공개하는 건 아닐까 노파심이 들기도 한다. 하지만 삶의 이야기는 나눌수록 느는 법. 주리니는 제품을 매개삼아 이뤄지는 일상의 이야기가 훨씬 풍성하다고 말한다.</SPAN></SPAN> <BR></FONT><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</SPAN> <BR></DIV>
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left>
+<TABLE style="MARGIN: 0px auto" cellSpacing=5 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><A href="http://cfile26.uf.tistory.com/original/137ECD1D4B7FD03859A52D" target=_blank rel=lightbox><IMG style="CURSOR: pointer" height=203 alt="맥주 가슬링 배칭 비누" src="http://cfile26.uf.tistory.com/image/137ECD1D4B7FD03859A52D" width=295 border=0></A></TD>
+<TD><A href="http://cfile3.uf.tistory.com/original/1571F91D4B7FD03B86F658" target=_blank rel=lightbox></A></TD></TR></TBODY></TABLE></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><SPAN>&#65279;</SPAN><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">맥주 가슬리 배칭 비누,</SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">천연화장품(젤스킨, 로션, BB크림)</SPAN></SPAN></SPAN> <BR></FONT></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt"></SPAN>&nbsp;</SPAN></SPAN>&nbsp;</DIV>
+<DIV style="TEXT-ALIGN: center" align=left><BR><A href="http://blog.daum.net/amstell" target=_blank><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">http://blog.daum.net/amstell</SPAN></SPAN></A><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">&nbsp;<BR></SPAN></SPAN><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">‘좋은 엄니’의 뜨거운 빵집&nbsp; 수많은 고객에게 팔리는 유명 제빵사 빵과 가족을 위해 만든 엄마 빵 중 하나를 택하라고 하면 누구나 엄마 빵을 택할 것이다. 엄마 빵에는 자녀만을 생각하는 정성스런 마음이 담겨있기 때문이다. ‘좋은 엄니’의 블로그는 이러한 엄마 마음이 묻어나는 고운 빵집이다. 화려한 장식의 빵집이 아닌 투박하지만 정이 넘치는 ‘좋은 엄니’의 빵집. 수다가 특기라는 그녀는 갓구운 빵을 먹으며 가족과 얘기하는 걸 즐긴다. 그녀가 인도하는 행복 레시피를 한번 따라가 보자.</SPAN></SPAN> </FONT></DIV>
+<DIV><FONT color=#7f7f7f></FONT>&nbsp;</DIV>
+<DIV><FONT color=#7f7f7f>&nbsp;</DIV></FONT><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt">
+<DIV class="imageblock dual" style="TEXT-ALIGN: center" align=left>
+<TABLE style="MARGIN: 0px auto" cellSpacing=5 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><A href="http://cfile8.uf.tistory.com/original/187AFF1D4B7FD01D6FCD95" target=_blank rel=lightbox></A></TD>
+<TD><A href="http://cfile25.uf.tistory.com/original/200C421D4B7FD020390CF5" target=_blank rel=lightbox><IMG style="CURSOR: pointer" height=196 alt="피칸 호밀빵" src="http://cfile25.uf.tistory.com/image/200C421D4B7FD020390CF5" width=295 border=0></A></TD></TR></TBODY></TABLE></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><SPAN></DIV></SPAN></SPAN></SPAN>
+<DIV style="TEXT-ALIGN: center" align=left></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><BR><FONT color=#7f7f7f><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-SIZE: 9pt">감자 식빵,</SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 9pt">크랜베리 피칸 호밀빵&nbsp;</SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</SPAN><SPAN style="FONT-SIZE: 9pt">&nbsp;</SPAN> <BR></FONT></DIV>
+<DIV style="TEXT-ALIGN: center" align=left><SPAN style="FONT-SIZE: 9pt"></SPAN>&nbsp;</DIV>
+<DIV style="TEXT-ALIGN: left" align=left><SPAN style="FONT-SIZE: 9pt"><SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 9pt"><SPAN style="FONT-FAMILY: helvetica">2010 월간&nbsp;아이엠애드 1월호<BR>Blog scap-삶의 하모니를 꿈꾸는 사람들<BR></SPAN></SPAN></SPAN></SPAN><SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 9pt"><SPAN style="FONT-FAMILY: helvetica">written by 김성재 기자<BR></SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 9pt"><SPAN style="FONT-FAMILY: helvetica">edited by</SPAN></SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 9pt"><SPAN style="FONT-FAMILY: helvetica">&nbsp;websmedia</SPAN></SPAN></SPAN></SPAN><BR><FONT color=#008000><SPAN style="FONT-SIZE: 10pt"><SPAN style="FONT-FAMILY: helvetica"><SPAN style="FONT-SIZE: 9pt"><SPAN style="FONT-FAMILY: helvetica">저작권자 ⓒ 웹스미디어 컴퍼니 무단 전재-재배포 금지</SPAN></SPAN></SPAN></SPAN></FONT></SPAN></DIV>            </span>
+            </xml>
+            </xmp>
+                        <!--태그 :
+                              태그와 태그는 쉼표로 구분하며, 5개까지 등록가능합니다. --></td>
+        </tr>
+        <tr>
+          <td height="50" align="center"><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+              	                
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="50" align="right"><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                                <td><a href="../magazine/write.proc.php?mode=delete&amp;idx=163&amp;page=8"><img src="../images/button/tut_del.gif" border="0" /></a></td>
+                <td width="5"></td>
+                <td><a href="../magazine/magazine_write.php?mode=update&amp;idx=163&amp;page=8"><img src="../images/button/tut_mod.gif" border="0" /></a></td>
+                <td width="5"></td>
+                                                <td><a href="../magazine/magazine.php?page=8"><img src="../images/common/btn_list.gif" border="0" /></a></td>
+                <td width="5"></td>
+                
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><!-- 코멘트 시작 -->
+            
+            <table width="960" height="99" border="0" cellspacing="0" cellpadding="0" style="TABLE-LAYOUT: fixed" bgcolor="#ffffff">
+              <tr>
+                <td align="center"><form action="write.proc.php" method="post" enctype="multipart/form-data" name="commentFrm" id="commentFrm">
+                    <table width="930" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="1" colspan="7" bgcolor="#CCCCCC"></td>
+                      </tr>
+                    <table width="950" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td height="17"></td>
+                      </tr>
+                      <tr>
+                        <td width="20"></td>
+                        <td colspan="6" align="left" class="view_text">댓글 (0)&nbsp;&nbsp;|&nbsp;&nbsp;조회수 (3,685)</td>
+                      </tr>
+                                            <tr>
+                        <td colspan="7" height="13"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" height="1" bgcolor="#e6e6e6"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" height="13"></td>
+                      </tr>
+                    </table>
+                    <input name="mode" type="hidden" id="mode" value="cmt_write" />
+                    <input name="pidx" type="hidden" id="pidx" value="163" />
+                </form></td>
+              </tr>
+              <tr>
+                <td align="center"><div id="div_commnet"></div>
+                  <table width="950" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                   
+                    <tr>
+                      <td height="5"></td>
+                    </tr>
+                    <tr id="pageing_tr1">
+                      <td align="center"><div id="div_pagination" class="paginate"></div></td>
+                    </tr>
+                    <tr id="pageing_tr2">
+                      <td height="10"></td>
+                    </tr>
+                    <!--<tr>
+           				<td colspan="7" height="1" bgcolor="#e6e6e6"></td>
+        			</tr>-->
+                    
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+       <tr>
+    <td height="26"></td>
+  </tr>
+</table>
+<script language="JavaScript" src="../js/board.js"></script> 
+<script language="JavaScript">
+window.onload=function() {
+    resizeBoardImage(930);
+    //drawFont();
+}
+</script> 
+<script>
+var Paging2 = $("#div_pagination").paging(0, {
+	format: '[< ncnnn >]',
+	perpage: 10,
+	onSelect: function(page) {
+		$.ajax({
+			"url": './ajax.comment.php?idx=163&cpage=' + page,
+			"success": function(data) {
+				var msg = $('#div_commnet');
+				msg.html(data);
+			}
+		});
+	},
+	onFormat: function (type) {
+		switch (type) {
+		case 'block':
+			if (!this.active)
+				return '<span class="pageNumber2">' + this.value + '</span>';
+			else if (this.value != this.page)
+				return '<a href="#' + this.value + '"><span class="pageNumber1">' + this.value + '</span></a>';
+			return '<span class="pageNumber2">' + this.value + '</span>';
+		case 'next':
+
+			if (this.active) {
+				return '<a href="#' + this.value + '" class="next"><span class="pageTxt">다음</span></a>';
+			}
+			return '<span class="pageTxt">다음</span>';
+
+		case 'prev':
+
+			if (this.active) {
+				return '<a href="#' + this.value + '" class="prev"><span class="pageTxt">이전<span></a>';
+			}
+			return '<span class="pageTxt">이전</span>';
+
+		case 'first':
+
+			if (this.active) {
+				return '<a href="#' + this.value + '" class="first"><span class="pageTxt">처음</span></a>';
+			}
+			return '<span class="pageTxt">처음</span>';
+
+		case 'last':
+
+			if (this.active) {
+				return '<a href="#' + this.value + '" class="prev"><span class="pageTxt">끝</span></a>';
+			}
+			return '<span class="pageTxt">끝</span>';
+		}
+		return "";
+
+	}
+});
+</script>
+<table cellpadding="0" cellspacing="0" width="980">
+	<tr>
+    	<td bgcolor="#ffffff"><table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+  <tr>
+    <td colspan="2" height="1" bgcolor="#efefef"></td>
+  </tr>
+  <tr>
+    <td width="25"></td>
+    <td height="25" align="left" valign="bottom"><table width="400" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><a href="../company/company.php"><img src="../images/foot/btn_1.jpg" border="0" /></a></td>
+          <td bgcolor="#FFFFFF"><a href="../company/contact.php" style="text-decoration:none; border:none;"><img src="../images/foot/btn_2.jpg" border="0" /></a></td>
+          <td><a href="../company/advercon.php" style="text-decoration:none; border:none;"><img src="../images/foot/btn_3.jpg" border="0" /></a></td>
+          <td><a href="../company/provision.php" style="text-decoration:none; border:none;"><img src="../images/foot/btn_4.jpg" border="0" /></a></td>
+          <td><a href="../company/privacy.php" style="text-decoration:none; border:none;"><img src="../images/foot/btn_5.jpg" border="0" /></a></td>
+          <!--<td><img src="../images/foot/btn_6.jpg" /></td>--> 
+          
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td width="12"></td>
+    <td height="70" align="left" valign="middle"><img src="../images/foot/copy_con.jpg" /></td>
+  </tr>
+</table>
+</script> 
+</td>                                 
+    </tr>                        
+    
+</table>
+</center>
+<script language="javascript" src="../js/wrest.js"></script>
+
+<!-- 새창 대신 사용하는 iframe -->
+<iframe width=0 height=0 name='hiddenframe' style='display:none;'></iframe>
+
+<script src="http://weblog.designspoon.kr/hanbiro.js"></script>
+</body>
+
+</html>
+

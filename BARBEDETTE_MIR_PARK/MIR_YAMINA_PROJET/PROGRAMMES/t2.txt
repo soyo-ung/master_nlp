@@ -1,0 +1,5 @@
+﻿je suis la ligne 1 du fichier t2
+je suis la ligne 2 du fichier t2
+je suis la ligne 3 du fichier t2
+je suis la ligne 4 du fichier t2
+je suis la ligne 5 du fichier t2
